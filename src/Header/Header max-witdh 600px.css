@@ -1,0 +1,41 @@
+#header {
+  background: var(--bg-header);
+  border-bottom: var(--border-bottom-header);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0s linear;
+  -webkit-transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -ms-transition: all 0s linear;
+  -o-transition: all 0s linear;
+}
+.header__box--mobi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__mobi__box--menu--login {
+  display: flex;
+  gap: 1rem;
+}
+.header__mobi--login,
+.header__mobi--menu {
+  width: 4rem;
+  padding: 1rem;
+  display: block;
+  fill: var(--fill-icon);
+}
+
+.header__mobi--login:hover,
+.header__mobi--menu:hover {
+  width: 4rem;
+  padding: 1rem;
+  display: block;
+  fill: var(--fill-icon);
+}
+.header__box--pc {
+  display: none;
+}
+

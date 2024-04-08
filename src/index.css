@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght,YTLC@0,6..12,200..1000,440..540;1,6..12,200..1000,440..540&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  /*10px*/
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.layout {
+  padding: 2rem;
+  margin: auto;
+  max-width: 130rem;
+  overflow: hidden;
+}
+:root {
+  --font-size--parameter: 2rem;
+  --bg--btn: #1464f4;
+  --color-in--image: #fff;
+  --font-size-title: 2.4rem;
+  --font-size-default: 1.4rem;
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 2rem;
+  --font-size-url: 1.6rem;
+  --color-text-default: #3c3c3c;
+  --color-url: #1464f4;
+  --border-btn:.1rem solid #1464f4;
+  --bg-header:#fff;
+  --bg-menu:#fff;
+  --fill-hover:#1464f4;
+  --scrollbar-thumb:#1464f4;
+  --fill-icon:gray;
+  --border-bottom-header:0.1rem solid #0000000f;
+}
