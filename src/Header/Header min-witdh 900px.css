@@ -7,13 +7,15 @@
     justify-content: space-between;
     align-items: center;
     gap: 5rem;
+    position: relative;
+    top: 100%;
   }
-  .header__pc--navogation {
+  .header__pc--navigation {
     flex: 1;
     display: flex;
     gap: 1rem;
   }
-  .header__pc--navogation--items {
+  .header__pc--navigation--items {
     display: block;
     color: var(--color-text-default);
     font-size: var(--font-size-medium);
@@ -21,8 +23,19 @@
     text-transform: capitalize;
     font-weight: 700;
     padding: 1rem;
+    cursor: pointer;
+    position: relative;
   }
-  .header__pc--navogation--items:hover {
+  .header__pc--navigation--items:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background: transparent;
+    left: 0;
+  }
+  .header__pc--navigation--items:hover {
     color: var(--color-url);
   }
   .header__pc__box--menu--login--test-driver {
@@ -38,8 +51,7 @@
   .header__pc--menu:hover {
     width: 4rem;
     padding: 1rem;
-    cursor: pointer;
-    fill:var(--fill-hover) ;
+    fill: var(--fill-hover);
   }
   .header__pc--login {
     display: block;
@@ -76,5 +88,393 @@
   .header__pc--test-driver:hover {
     background-color: transparent;
     color: var(--color-url);
+  }
+
+  .header__pc__box--navigation--items--options {
+    height: 20rem;
+    width: 100%;
+    left: 0;
+    top: 130%;
+    position: absolute;
+    background: transparent;
+    margin-top: 1rem;
+    display: none;
+  }
+  .header__pc__navigation--items--options--pin,
+  .header__pc__navigation--items--options--service,
+  .header__pc__navigation--items--options--cars {
+    position: fixed;
+    background: var(--bg-header);
+    right: 0;
+    left: 0;
+    /* height: auto; */
+    /* display: none; */
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.353);
+  }
+  .header__pc--navigation--items:hover
+    > .header__pc__box--navigation--items--options {
+    display: block;
+    color: var(--color-text-default);
+    cursor: default;
+  }
+  .header__pc__box--navigation--items--options:hover
+    > .header__pc__navigation--items--options--cars {
+  }
+  .header__pc__navigation--items--options--service,
+  .header__pc__navigation--sub--items--cars {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-decoration: none;
+  }
+  .header__pc__navigation--sub--items:hover {
+    background: #0057b31f;
+  }
+  .header__pc__box__navigation--items--options--views {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .header__pc__navigation--items--options--views--cars-eletric:hover,
+  .header__pc__navigation--items--options--views--cars-oil:hover {
+    cursor: pointer;
+    color: var(--color-url);
+    scale: 1;
+  }
+  .header__pc__navigation--items--options--views--cars-eletric.header__pc__navigation--items--options--views-scale,
+  .header__pc__navigation--items--options--views--cars-oil.header__pc__navigation--items--options--views-scale {
+    scale: 1.1;
+    color: var(--color-url);
+  }
+  .header__pc__box__navigation--items--options--cars {
+    height: 100%;
+    display: flex;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    height: 13rem;
+  }
+  .header__pc__box__navigation--items--options--cars-eletric.header__pc__box__navigation--items--options--cars-show,
+  .header__pc__box__navigation--items--options--cars-oil.header__pc__box__navigation--items--options--cars-show {
+    display: grid;
+    animation: headerShowCarsItems 0.3s ease-in;
+    -webkit-animation: headerShowCarsItems 0.3s ease-in;
+  }
+  .header__pc__box__navigation--items--options--cars-oil,
+  .header__pc__box__navigation--items--options--cars-eletric {
+    display: none;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.4rem;
+    height: 100%;
+    flex: 1;
+    height: 100%;
+    text-decoration: none;
+  }
+  .header__pc__navigation--sub--items--img-1 {
+    flex: 1;
+    height: 100%;
+    background: url("../../public/Ô tô/VF5_1.png");
+    background-size: 80%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+    inset: 1rem;
+  }
+  .header__pc__navigation--sub--items:hover
+    > .header__pc__navigation--sub--items--img-1 {
+    background: url("../../public/Ô tô/VF5_2.png");
+    flex: 1;
+    height: 100%;
+    background-size: 100%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .header__pc__navigation--sub--items--img-2 {
+    background: url("../../public/Ô tô/VF6_1.png");
+    flex: 1;
+    height: 100%;
+    background-size: 80%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+    inset: 1rem;
+  }
+  .header__pc__navigation--sub--items:hover
+    > .header__pc__navigation--sub--items--img-2 {
+    background: url("../../public/Ô tô/VF6_2.png");
+    flex: 1;
+    height: 100%;
+    background-size: 100%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .header__pc__navigation--sub--items--img-3 {
+    flex: 1;
+    height: 100%;
+    background: url("../../public/Ô tô/VFe34_1.png");
+    background-size: 80%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+    inset: 1rem;
+  }
+  .header__pc__navigation--sub--items:hover
+    > .header__pc__navigation--sub--items--img-3 {
+    background: url("../../public/Ô tô/VFe34_2.png");
+    flex: 1;
+    height: 100%;
+    background-size: 100%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .header__pc__navigation--sub--items--img-4 {
+    flex: 1;
+    height: 100%;
+    background: url("../../public/Ô tô/VF7_1.png");
+    background-size: 80%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+    inset: 1rem;
+  }
+  .header__pc__navigation--sub--items:hover
+    > .header__pc__navigation--sub--items--img-4 {
+    background: url("../../public/Ô tô/VF7_2.png");
+    flex: 1;
+    height: 100%;
+    background-size: 100%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .header__pc__navigation--sub--items--img-5 {
+    flex: 1;
+    height: 100%;
+    background: url("../../public/Ô tô/VF8_1.png");
+    background-size: 80%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+    inset: 1rem;
+  }
+  .header__pc__navigation--sub--items:hover
+    > .header__pc__navigation--sub--items--img-5 {
+    background: url("../../public/Ô tô/VF8_2.png");
+    flex: 1;
+    height: 100%;
+    background-size: 100%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .header__pc__navigation--sub--items--img-6 {
+    flex: 1;
+    height: 100%;
+    background: url("../../public/Ô tô/VF9_1.png");
+    background-size: 80%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+    inset: 1rem;
+  }
+  .header__pc__navigation--sub--items:hover
+    > .header__pc__navigation--sub--items--img-6 {
+    background: url("../../public/Ô tô/VF9_2.png");
+    flex: 1;
+    height: 100%;
+    background-size: 100%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .header__pc__navigation--sub--items--img--name {
+    text-align: center;
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-text-default);
+  }
+  .header__pc__box__navigation--items--options--cars-oil {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .header__pc__navigation--sub--items--car--oli-2 {
+    flex: 1;
+    height: 100%;
+    background: url("../../public/Ô tô/Fadil_1.png");
+    background-size: 80%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+    inset: 1rem;
+  }
+
+  .header__pc__navigation--sub--items:hover
+    > .header__pc__navigation--sub--items--car--oli-2 {
+    background: url("../../public/Ô tô/Fadil_2.png");
+    flex: 1;
+    height: 100%;
+    background-size: 90%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .header__pc__navigation--sub--items--car--oli-3 {
+    flex: 1;
+    height: 100%;
+    background: url("../../public/Ô tô/Lux-A2_1.png");
+    background-size: 80%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+    inset: 1rem;
+  }
+  .header__pc__navigation--sub--items:hover
+    > .header__pc__navigation--sub--items--car--oli-3 {
+    background: url("../../public/Ô tô/Lux-A2_2.png");
+    flex: 1;
+    height: 100%;
+    background-size: 90%;
+
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .header__pc__navigation--sub--items--car--oli-4 {
+    flex: 1;
+    height: 100%;
+    background: url("../../public/Ô tô/Lux-SA2_1.png");
+    background-size: 80%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+    inset: 1rem;
+  }
+  .header__pc__navigation--sub--items:hover
+    > .header__pc__navigation--sub--items--car--oli-4 {
+    background: url("../../public/Ô tô/Lux-SA2_2.png");
+    flex: 1;
+    height: 100%;
+    background-size: 90%;
+
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .header__pc__navigation--sub--items--car--oli-5 {
+    flex: 1;
+    height: 100%;
+    background: url("../../public/Ô tô/President_1.png");
+    background-size: 80%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+    inset: 1rem;
+  }
+  .header__pc__navigation--sub--items:hover
+    > .header__pc__navigation--sub--items--car--oli-5 {
+    background: url("../../public/Ô tô/President_2.png");
+    flex: 1;
+    height: 100%;
+    background-size: 90%;
+
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .header__pc__navigation--sub--items--car--oli-6 {
+  }
+  @keyframes headerShowCarsItems {
+    from {
+      opacity: 0;
+    }
+  }
+  .header__pc__box__navigation--items--options--cars-oil
+    > .header__pc__navigation--sub--items:first-child:hover,
+  .header__pc__box__navigation--items--options--cars-oil
+    > .header__pc__navigation--sub--items:last-child:hover {
+    background: transparent;
+    cursor: default;
+  }
+
+  .header__pc__navigation--sub--items {
+    text-decoration: none;
+  }
+  .header__pc__navigation--items--options--service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .header__pc__box__navigation--items--options--service {
+    width: 100%;
+    display: block;
+  }
+  .header__pc__box__navigation--items--options--service--items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .header__pc__navigation--items--options--service--items--body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .header__pc__navigation--items--options--service--items--choose {
+    padding: 1rem;
+    color: var(--color-text-default);
+    text-decoration: none;
+    display: block;
+  }
+  .header__pc__navigation--items--options--service--items--choose:hover {
+    color: var(--color-url);
+    background: #0057b31f;
+  }
+  .header__pc__box__navigation--items--options--service--book-a-schedule {
+    width: 100%;
+    background-image: url("../../public/header__service-img/dvhm.png");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    padding: 2rem;
+  }
+  .header__pc__navigation--items--options--service--btn--book-a-schedule {
+    text-align: center;
+    padding: 1rem;
+    display: block;
+    color: var(--color-in--image);
+    background: var(--bg--btn);
+    text-decoration: none;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+  }
+  .header__pc__navigation--items--options--service--btn--book-a-schedule:hover {
+    filter: grayscale(0.3);
+    -webkit-filter: grayscale(0.3);
+  }
+  .header__pc__navigation--items--options--pin  {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .header__pc__navigation--items--options--pin--items {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  .header__pc__navigation--items--options--pin--items:hover {
+    background: #0057b31f;
+  }
+  .header__pc__navigation--items--options--pin--items--title {
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-text-default);
+    text-align: center;
   }
 }
