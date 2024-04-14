@@ -16,6 +16,7 @@ function handlebtnArrowWhenClick(valueBtn) {
     case ("" + valueBtn).trim().toLowerCase() == "prev".trim().toLowerCase():
       for (let i = 0; i < arrayItemsLogo.length; i++) {
         if (!!arrayItemsLogo[i].getAttribute("current-item")) {
+       
           sendDataWhenHaveItem((i - 1) < 0 ? (arrayItemsLogo.length - 1 ): i -1 );
           return;
         }

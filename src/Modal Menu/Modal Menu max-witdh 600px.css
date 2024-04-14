@@ -51,6 +51,11 @@
   flex-direction: column;
   gap: 2rem;
   z-index: 1;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .menu__box--mobi.menu__box--mobi-show {
   right: 0;
@@ -268,11 +273,11 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  transition: all .2s linear;
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -ms-transition: all .2s linear;
-  -o-transition: all .2s linear;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 .menu__mobi--choose--language--options--area--name {

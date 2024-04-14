@@ -8,7 +8,7 @@
 }
 .Cars__box--logo {
   width: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
   scroll-snap-type: x mandatory;
@@ -19,7 +19,7 @@
 .Cars__box__logo--options {
   display: flex;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
   /* position: relative; */
 }
 .Cars__box__logo__options--items {
@@ -58,7 +58,7 @@
   left: 0;
   width: calc(100%);
   background: #1464f4;
-  height: .3rem;
+  height: 0.3rem;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -71,8 +71,8 @@
   -o-transition: var(--transition);
 }
 .Cars__box--items {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 100%;
   position: relative;
   padding-bottom: 3rem;
@@ -82,7 +82,7 @@
 }
 
 .Cars__box--items--img > img {
-
+  scale: 0.7;
   width: 100%;
 }
 .Cars__box__items--arow {
@@ -110,7 +110,6 @@
   justify-content: center;
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.204);
   cursor: pointer;
-
 }
 .Cars__box__items--arow__items > svg {
   width: 2rem;
@@ -131,6 +130,26 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+}
+.Cars__box--img.Cars__box__img__changed--items{
+  animation: carsBlurWhenChangedItem .5s ease-in-out;
+  -webkit-animation: carsBlurWhenChangedItem .5s ease-in-out;
+}
+.Cars__box__items__detail--parameter.Cars__box__items__detail--parameter__changed--items{
+ animation: carsBlurWhenChangedItem .5s ease-in-out;
+ -webkit-animation: carsBlurWhenChangedItem .5s ease-in-out;
+}
+
+@keyframes carsBlurWhenChangedItem {
+  from {
+    filter: blur(.2rem);
+    -webkit-filter: blur(.2rem);
+    opacity: 0;
+} to {
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  opacity: 1;
+}
 }
 .Cars__box__items__detail__parameter--seat,
 .Cars__box__items__detail__parameter--distance,
@@ -174,7 +193,7 @@
   font-size: var(--font-size-medium);
   position: relative;
   overflow: hidden;
-  text-decoration: none ;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -262,4 +281,3 @@
     width: 100%;
   }
 }
-

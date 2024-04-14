@@ -2,11 +2,13 @@ function handleChangeImgCarsWhenClickLogo(e) {
   const arrayItemsLogo = document.querySelectorAll(
     ".Cars__box__logo__options--items"
   );
-  console.log(e);
   arrayItemsLogo.forEach((item) => {
     if (item.getAttribute("current-item")) {
       item.removeAttribute("current-item");
       item.classList.remove("Cars__box__logo__options__items--change-fill");
+      if(window.innerWidth < 900) {
+        item.style.order = '1'
+       }
       return;
     }
   });
@@ -27,7 +29,6 @@ function handleChangeImgCarsWhenClickLogo(e) {
   const boxPrice = document.querySelector(
     ".Cars__box__items__detail__parameter--price .Cars__box__items__detail__parameter--value"
   );
-  console.log(boxSeat);
   const boxDistance = document.querySelector(
     ".Cars__box__items__detail__parameter--distance .Cars__box__items__detail__parameter--value"
   );
@@ -37,6 +38,7 @@ function handleChangeImgCarsWhenClickLogo(e) {
   const btnViewMore = document.querySelector(
     ".Cars__box__items__detail__btn--views-more"
   );
+  boxImg.classList.remove("Cars__box__img__changed--items")
   boxImg.src = dataImage;
   boxKind.innerHTML = dataKind;
   boxSeat.innerHTML = `${dataSeat} Chỗ`;
@@ -47,9 +49,15 @@ function handleChangeImgCarsWhenClickLogo(e) {
   e.setAttribute("current-item", `${dataLocation}`);
   e.classList.add("Cars__box__logo__options__items--change-fill");
   boxBarLineRowDown.style.left = `${
-    e.getBoundingClientRect().left - e.clientWidth
+    e.clientWidth * dataLocation
   }px`;
-  console.log(e.getBoundingClientRect().left);
+  boxImg.classList.add("Cars__box__img__changed--items")
+ if(window.innerWidth < 900) {
+  e.style.order = '-1'
+  boxBarLineRowDown.style.left = `${
+    0
+  }px`;
+ };
 }
 
 export { handleChangeImgCarsWhenClickLogo };
