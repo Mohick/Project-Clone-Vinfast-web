@@ -9,6 +9,15 @@
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; 
+}
+html::selection {
+  background: none;
+  color: red;
 }
 html {
   font-size: 62.5%;

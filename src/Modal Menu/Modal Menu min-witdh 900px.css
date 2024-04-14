@@ -22,7 +22,7 @@
     -o-transition: all 0.5s linear;
     transition-delay: 0s;
     cursor: default;
-    z-index: 09;
+    z-index: 9;
   }
 
   .menu__box--pc.menu__box--pc--show {
