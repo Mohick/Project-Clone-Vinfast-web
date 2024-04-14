@@ -4,11 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-user-select: none; 
@@ -33,6 +28,7 @@ html {
   margin: auto;
   max-width: 130rem;
   /* overflow: hidden; */
+
 }
 
 :root {
@@ -54,4 +50,5 @@ html {
   --scrollbar-thumb:#1464f4;
   --fill-icon:gray;
   --border-bottom-header:0.1rem solid #0000000f;
+  --transition:all .2s linear ;
 }

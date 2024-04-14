@@ -137,8 +137,8 @@ function ModalMenuPage() {
           <div className="menu__pc--sub-menu ">
             <div className="menu__pc--sub-menu__box--btn-close ">
               <div
-                onClick={setLanguage}
-                className="menu__pc--sub-menu--btn-close "
+                onClick={handleShowSubModal}
+                className="menu__pc--sub-menu--btn-close"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                   <path

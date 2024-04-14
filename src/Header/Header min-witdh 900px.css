@@ -25,7 +25,12 @@
     padding: 1rem;
     cursor: pointer;
     position: relative;
-  }
+    transform: var(--transition);
+    -webkit-transform: var(--transition);
+    -moz-transform: var(--transition);
+    -ms-transform: var(--transition);
+    -o-transform: var(--transition);
+}
   .header__pc--navigation--items:hover::after {
     position: absolute;
     content: "";
@@ -84,7 +89,12 @@
     -o-border-radius: 1rem;
     border: var(--border-btn);
     line-height: 1.5;
-  }
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
   .header__pc--test-driver:hover {
     background-color: transparent;
     color: var(--color-url);
@@ -107,16 +117,28 @@
     background: var(--bg-header);
     right: 0;
     left: 0;
-    /* height: auto; */
-    /* display: none; */
-    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.353);
-  }
+    /*height: auto;
+    *//*display: none;
+    */box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.353);
+    transition:var(--transition) ;
+    -webkit-transition:var(--transition) ;
+    -moz-transition:var(--transition) ;
+    -ms-transition:var(--transition) ;
+    -o-transition:var(--transition) ;
+    animation: headerShowCarsItems .2s linear;
+    -webkit-animation: headerShowCarsItems .2s linear;
+}
   .header__pc--navigation--items:hover
     > .header__pc__box--navigation--items--options {
     display: block;
     color: var(--color-text-default);
     cursor: default;
-  }
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
   .header__pc__box--navigation--items--options:hover
     > .header__pc__navigation--items--options--cars {
   }
@@ -135,6 +157,15 @@
     justify-content: center;
     gap: 2rem;
   }
+  .header__pc__navigation--items--options--views--cars-eletric,
+  .header__pc__navigation--items--options--views--cars-oil {
+    cursor: pointer;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
   .header__pc__navigation--items--options--views--cars-eletric:hover,
   .header__pc__navigation--items--options--views--cars-oil:hover {
     cursor: pointer;
@@ -168,7 +199,19 @@
     flex: 1;
     height: 100%;
     text-decoration: none;
-  }
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
+.header__pc__navigation--sub--items--img {
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
   .header__pc__navigation--sub--items--img-1 {
     flex: 1;
     height: 100%;

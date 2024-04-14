@@ -47,7 +47,7 @@ function handleChangeImgCarsWhenClickLogo(e) {
   e.setAttribute("current-item", `${dataLocation}`);
   e.classList.add("Cars__box__logo__options__items--change-fill");
   boxBarLineRowDown.style.left = `${
-    e.getBoundingClientRect().left - e.clientWidth + 20
+    e.getBoundingClientRect().left - e.clientWidth
   }px`;
   console.log(e.getBoundingClientRect().left);
 }

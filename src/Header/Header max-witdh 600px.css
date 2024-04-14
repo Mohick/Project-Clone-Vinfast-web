@@ -12,14 +12,31 @@
   -o-transition: all 0s linear;
   z-index: 49;
 }
+#header > *  {
+  transition: all 0s linear;
+  -webkit-transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -ms-transition: all 0s linear;
+  -o-transition: all 0s linear;
+}
 .header__box--mobi {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0s linear;
+  -webkit-transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -ms-transition: all 0s linear;
+  -o-transition: all 0s linear;
 }
 .header__mobi__box--menu--login {
   display: flex;
   gap: 1rem;
+  transition: all 0s linear;
+  -webkit-transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -ms-transition: all 0s linear;
+  -o-transition: all 0s linear;
 }
 .header__mobi--login,
 .header__mobi--menu {
@@ -38,5 +55,10 @@
 }
 .header__box--pc {
   display: none;
+  transition: all 0s linear;
+  -webkit-transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -ms-transition: all 0s linear;
+  -o-transition: all 0s linear;
 }
 
