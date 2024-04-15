@@ -1,10 +1,10 @@
 @media screen and (min-width: 900px) {
-  .Cars__box__logo__options--items {
+  .Moto__box__logo__options--items {
     flex: 1;
     justify-content: center;
     display: flex;
   }
-  .Cars__box__items--arow {
+  .Moto__box__items--arow {
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -13,17 +13,14 @@
     -o-transform: translateY(-50%);
     justify-content: space-between;
   }
-  .Cars__box__bar--down {
+  .Moto__box__bar--down {
     width: calc(100% / 6);
   }
-  .Cars__box__items__detail__btn--views-more,
-  .Cars__box__items__detail__btn--deposit {
+  .Moto__box__items__detail__btn--views-more,
+  .Moto__box__items__detail__btn--deposit {
     width: 26rem;
   }
-  .Cars__box__items__detail--parameter {
+  .Moto__box__items__detail--parameter {
     grid-template-columns: repeat(4,1fr);
-  }
-  .Moto__box__items--detail {
-    background: linear-gradient(180deg, white , #f6f8f8);
   }
 }

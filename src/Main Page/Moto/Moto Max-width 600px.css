@@ -1,12 +1,12 @@
-.Cars {
+.Moto {
   margin-top: 2rem;
 }
-.Cars__container {
+.Moto__container {
   /* display: flex; */
   gap: 2rem;
   flex-direction: column;
 }
-.Cars__box--logo {
+.Moto__box--logo {
   width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -16,13 +16,13 @@
   scrollbar-color: transparent transparent;
   position: relative;
 }
-.Cars__box__logo--options {
+.Moto__box__logo--options {
   display: flex;
   width: 100%;
   padding: 1rem 0;
   /* position: relative; */
 }
-.Cars__box__logo__options--items {
+.Moto__box__logo__options--items {
   scroll-snap-type: x mandatory;
   flex: 0 0 100%;
   fill: var(--fill-icon);
@@ -41,10 +41,10 @@
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.Cars__box__logo__options--items.Cars__box__logo__options__items--change-fill {
+.Moto__box__logo__options--items.Moto__box__logo__options__items--change-fill {
   fill: var(--fill-hover);
 }
-.Cars__box__logo__options--items::after {
+.Moto__box__logo__options--items::after {
   content: "";
   position: absolute;
   top: 0;
@@ -52,7 +52,7 @@
   width: 100%;
   height: 100%;
 }
-.Cars__box__bar--down {
+.Moto__box__bar--down {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -70,22 +70,22 @@
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.Cars__box--items {
+.Moto__box--items {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 100%;
   position: relative;
   padding-bottom: 3rem;
 }
-.Cars__box--items--img {
+.Moto__box--items--img {
   width: 100%;
 }
 
-.Cars__box--items--img > img {
+.Moto__box--items--img > img {
   scale: 0.7;
   width: 100%;
 }
-.Cars__box__items--arow {
+.Moto__box__items--arow {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -96,7 +96,7 @@
   justify-content: center;
   gap: 2rem;
 }
-.Cars__box__items--arow__items {
+.Moto__box__items--arow__items {
   display: block;
   padding: 1rem;
   background: rgba(128, 128, 128, 0.323);
@@ -111,7 +111,7 @@
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.204);
   cursor: pointer;
 }
-.Cars__box__items--arow__items > svg {
+.Moto__box__items--arow__items > svg {
   width: 2rem;
   height: 2rem;
   fill: white;
@@ -121,71 +121,70 @@
   -ms-transition: all 0s linear;
   -o-transition: all 0s linear;
 }
-.Cars__box__items--arow__items:active > svg {
+.Moto__box__items--arow__items:active > svg {
   width: 2rem;
   height: 2rem;
   fill: var(--fill-hover);
 }
-.Cars__box__items__detail--parameter {
+.Moto__box__items__detail--parameter {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
-.Cars__box--img.Cars__box__img__changed--items {
-  animation: carsBlurWhenChangedItem 0.5s ease-in-out;
-  -webkit-animation: carsBlurWhenChangedItem 0.5s ease-in-out;
+.Moto__box--img.Moto__box__img__changed--items{
+  animation: MotoBlurWhenChangedItem .5s ease-in-out;
+  -webkit-animation: MotoBlurWhenChangedItem .5s ease-in-out;
 }
-.Cars__box__items__detail--parameter.Cars__box__items__detail--parameter__changed--items {
-  animation: carsBlurWhenChangedItem 0.5s ease-in-out;
-  -webkit-animation: carsBlurWhenChangedItem 0.5s ease-in-out;
+.Moto__box__items__detail--parameter.Moto__box__items__detail--parameter__changed--items{
+ animation: MotoBlurWhenChangedItem .5s ease-in-out;
+ -webkit-animation: MotoBlurWhenChangedItem .5s ease-in-out;
 }
 
-@keyframes carsBlurWhenChangedItem {
+@keyframes MotoBlurWhenChangedItem {
   from {
-    filter: blur(0.2rem);
-    -webkit-filter: blur(0.2rem);
+    filter: blur(.2rem);
+    -webkit-filter: blur(.2rem);
     opacity: 0;
-  }
-  to {
-    filter: blur(0);
-    -webkit-filter: blur(0);
-    opacity: 1;
-  }
+} to {
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  opacity: 1;
 }
-.Cars__box__items--detail {
-  background: linear-gradient(180deg, white, #f6f8f8);
 }
-.Cars__box__items__detail__parameter--seat,
-.Cars__box__items__detail__parameter--distance,
-.Cars__box__items__detail__parameter--price,
-.Cars__box__items__detail__parameter--kind {
+.Moto__box__items--detail {
+  background: linear-gradient(180deg, white , #f6f8f8);
+}
+.Moto__box__items__detail__parameter--speed,
+.Moto__box__items__detail__parameter--distance,
+.Moto__box__items__detail__parameter--price,
+.Moto__box__items__detail__parameter--box-moto {
   display: flex;
   align-items: center;
   gap: 1rem;
   flex-direction: column;
 }
-.Cars__box__items__detail__parameter--title {
+.Moto__box__items__detail__parameter--title {
   font-size: var(--font-size-medium);
   font-weight: 600;
   text-align: center;
 }
-.Cars__box__items__detail__parameter--value {
+.Moto__box__items__detail__parameter--value {
   font-size: var(--font-size-large);
   font-weight: bold;
   text-align: center;
 }
 
-.Cars__box__items__detail--btn {
+.Moto__box__items__detail--btn {
   margin-top: 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
-  justify-content: center;
   padding: 1rem 0;
+  justify-content: center;
 }
 
-.Cars__box__items__detail__btn--deposit,
-.Cars__box__items__detail__btn--views-more {
+.Moto__box__items__detail__btn--deposit,
+.Moto__box__items__detail__btn--views-more {
   padding: 2rem;
   border: var(--border-btn);
   border-radius: 1rem;
@@ -198,18 +197,18 @@
   font-size: var(--font-size-medium);
   position: relative;
   overflow: hidden;
-  z-index: 1;
   text-decoration: none;
+  z-index: 1;
   cursor: pointer;
 }
 
-.Cars__box__items__detail__btn--deposit {
+.Moto__box__items__detail__btn--deposit {
   color: var(--color-in--image);
 }
-.Cars__box__items__detail__btn--deposit:hover {
+.Moto__box__items__detail__btn--deposit:hover {
   color: var(--color-url);
 }
-.Cars__box__items__detail__btn--deposit::after {
+.Moto__box__items__detail__btn--deposit::after {
   content: "";
   position: absolute;
   left: 0;
@@ -226,12 +225,12 @@
   transform-origin: right;
 }
 
-.Cars__box__items__detail__btn--deposit:hover::after {
+.Moto__box__items__detail__btn--deposit:hover::after {
   width: 0;
-  animation: carsHoverBtnDeposit 0.5s ease-out;
-  -webkit-animation: carsHoverBtnDeposit 0.5s ease-out;
+  animation: MotoHoverBtnDeposit 0.5s ease-out;
+  -webkit-animation: MotoHoverBtnDeposit 0.5s ease-out;
 }
-@keyframes carsHoverBtnDeposit {
+@keyframes MotoHoverBtnDeposit {
   from {
     width: 100%;
   }
@@ -245,13 +244,13 @@
     width: 0;
   }
 }
-.Cars__box__items__detail__btn--views-more {
+.Moto__box__items__detail__btn--views-more {
   color: var(--color-url);
 }
-.Cars__box__items__detail__btn--views-more:hover {
+.Moto__box__items__detail__btn--views-more:hover {
   color: var(--color-in--image);
 }
-.Cars__box__items__detail__btn--views-more::after {
+.Moto__box__items__detail__btn--views-more::after {
   content: "";
   position: absolute;
   left: 0;
@@ -267,13 +266,13 @@
   -o-transition: all 0.3s ease-in-out;
 }
 
-.Cars__box__items__detail__btn--views-more:hover::after {
+.Moto__box__items__detail__btn--views-more:hover::after {
   width: 100%;
-  animation: carsHoverBtnVIewMore 0.5s ease-out;
-  -webkit-animation: carsHoverBtnVIewMore 0.5s ease-out;
+  animation: MotoHoverBtnVIewMore 0.5s ease-out;
+  -webkit-animation: MotoHoverBtnVIewMore 0.5s ease-out;
 }
 
-@keyframes carsHoverBtnVIewMore {
+@keyframes MotoHoverBtnVIewMore {
   from {
     width: 0;
   }
