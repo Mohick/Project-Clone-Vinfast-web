@@ -1,0 +1,8 @@
+@media screen and (min-width: 600px) {
+  .tools__and__Station__charging__first__items--img:hover
+    > .tools__and__Station__charging__first__items--title {
+    position: absolute;
+    bottom: 50%;
+    text-shadow: 0.1rem 0 0 black;
+  }
+}

@@ -85,6 +85,12 @@
   background: #f2eeeef1;
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.179);
   cursor: pointer;
+  transition: all .3s linear ;
+  -webkit-transition: all .3s linear ;
+  -moz-transition: all .3s linear ;
+  -ms-transition: all .3s linear ;
+  -o-transition: all .3s linear ;
+  box-shadow: 0 0 0 .1rem rgba(0, 0, 0, 0.28);
 }
 .slider__btn--dots > .slider__btn__dots--first.slider__btn__dots--active,
 .slider__btn--dots > .slider__btn__dots--seccond.slider__btn__dots--active {

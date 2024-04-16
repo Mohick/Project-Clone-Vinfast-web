@@ -1,0 +1,18 @@
+@media screen and (min-width: 900px) {
+  .tools__and__Station__charging--container {
+     display: grid;
+     width: 100%;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 2rem;
+ 
+  }
+  .tools__and__Station__charging__first__items--img {
+    height: 100%;
+  }
+  .tools__and__Station__charging__first__items--img:hover
+    > .tools__and__Station__charging__first__items--title {
+    position: absolute;
+    bottom: 55%;
+    text-shadow: 0.1rem 0 0 black;
+  }
+}
