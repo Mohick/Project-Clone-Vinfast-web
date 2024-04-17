@@ -1,0 +1,83 @@
+#show__room__and__community {
+  margin-top: 2rem;
+}
+.show__room__and__community__container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  width: 100%;
+}
+.show__room__and__community__box--items {
+  position: relative;
+  padding: 29%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-origin: left center;
+  background-position: left center;
+}
+.show__room__and__community__box--items:first-child {
+  background-image: url("https://vinfastauto.com/themes/porto/img/homepage-v2/showroom.webp");
+}
+.show__room__and__community__box--items:last-child {
+  background: url("https://vinfastauto.com/themes/porto/img/homepage-v2/community.webp");
+  background-repeat: no-repeat;
+  background-origin: left center;
+  background-position: left center;
+  background-size: 100%;
+
+}
+.show__room__and__community__box__items--container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: end;
+  display: flex;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  background: transparent;
+}
+.show__room__and__community__box__items--container:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.show__room__and__community__box__items--title {
+  padding: 1rem;
+  color: var(--color-in--image);
+  font-size: var(--font-size-medium);
+  position: relative;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  bottom: 0;
+}
+.show__room__and__community__box__items--container:hover
+  > .show__room__and__community__box__items--title {
+  bottom: 20%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.show__room__and__community__box__items__title--more {
+  position: absolute;
+  top: 100%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  background: transparent;
+}

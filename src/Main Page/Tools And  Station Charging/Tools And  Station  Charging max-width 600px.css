@@ -22,11 +22,11 @@
   background-position: left center;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
 }
 .tools__and__Station__charging__first--items {
   display: flex;
@@ -39,20 +39,27 @@
 .tools__and__Station__charging__first__items--img:last-child {
   background-image: url("	https://vinfastauto.com/themes/porto/img/homepage-v2/pin-xe-may.webp");
 }
-.tools__and__Station__charging__first__items--img:hover::after {
+.tools__and__Station__charging__first__items--img::after {
   position: absolute;
   content: "";
+  background: transparent;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+.tools__and__Station__charging__first__items--img:hover::after {
   background: linear-gradient(180deg, transparent 10%, rgba(0, 0, 0, 0.71) 90%);
-  transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
-  will-change: background;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
 }
 .tools__and__Station__charging__first__items--title {
   position: absolute;
@@ -60,11 +67,11 @@
   left: 0;
   color: var(--color-in--image);
   padding: 1rem;
-  transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
   display: block;
   width: 100%;
   z-index: 1;
@@ -78,11 +85,11 @@
   padding: 1rem;
   z-index: 1;
   opacity: 0;
-  transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -ms-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
 }
 .tools__and__Station__charging__first__items--img:hover
   > .tools__and__Station__charging__first__items--title {

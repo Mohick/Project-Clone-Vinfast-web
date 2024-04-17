@@ -1,0 +1,20 @@
+@media screen and (min-width: 900px) {
+  #greening__the__future {
+    padding: 20%;
+    background-position: left center;
+    background-size: 100%;
+  }
+  .greening__the__future__container {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+  .greening__the__future__container__box {
+    width: 50%;
+  }
+  .greening__the__future__container__box--btn {
+    padding: 1rem 3rem;
+    width: 50%;
+    text-align: center;
+  }
+}

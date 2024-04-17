@@ -101,13 +101,13 @@
   }
 
   .header__pc__box--navigation--items--options {
-    height: 20rem;
+    height: 100%;
     width: 100%;
     left: 0;
-    top: 130%;
+    top: 110%;
     position: absolute;
     background: transparent;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     display: none;
   }
   .header__pc__navigation--items--options--pin,

@@ -1,0 +1,11 @@
+@media screen and (min-width: 900px) {
+    .show__room__and__community__container {
+        display: flex;
+        gap: 2rem;
+        flex-direction: row;
+      }
+      .show__room__and__community__box--items {
+        width: 100%;
+        padding: 13.2rem;
+      }
+}
