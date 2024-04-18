@@ -171,6 +171,13 @@
   text-decoration: none;
   color: var(--color-text-default);
 }
+.menu__mobi__box--choose--language {
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+}
 .menu__mobi__box--choose--language.menu__mobi__box--choose--language-fixed {
   position: fixed;
   top: 0;

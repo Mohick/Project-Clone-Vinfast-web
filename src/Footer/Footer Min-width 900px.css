@@ -1,0 +1,29 @@
+@media screen and (min-width: 900px) {
+ .footer__container  {
+  display:  flex;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  padding-bottom: 20rem;
+ }
+ .footer__box__items__environment--title,
+ .footer__box__items__text--title {
+  font-size: var(--font-size-medium);
+  font-weight: normal;
+ }
+ .footer__box__items--text {
+  gap:.3rem
+ }
+ .footer__box--items:first-child {
+  flex: 1;
+ }
+ .footer__box__items__text--description {
+  flex: 1;
+ }
+ .footer__box__items__environment--options{
+  gap: 2rem;
+ }
+ .footer__box__items__environment--option {
+  cursor: pointer;
+ }
+
+}

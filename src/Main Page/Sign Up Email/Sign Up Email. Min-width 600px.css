@@ -1,0 +1,14 @@
+@media screen and (min-width: 600px) {
+    .sign__up__email__box__sign_up--input {
+        flex-direction: row;
+        gap: 0;
+    }
+    .sign__up__email__box__sign_up__input--email {
+        flex: 3;
+    }
+    .sign__up__email__box__sign_up__input--btn{
+        padding: 1.6rem;
+        flex: 1;
+        height: 100%;
+    }
+}

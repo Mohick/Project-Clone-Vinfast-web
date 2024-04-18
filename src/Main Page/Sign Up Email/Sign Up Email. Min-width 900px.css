@@ -1,0 +1,9 @@
+@media screen and (min-width: 900px) {
+    .sign__up__email__box__sign-up {
+        width: 50%;
+        margin:auto;
+    }
+    .sign__up__email__box__sub--title {
+        text-align: center;
+    }
+}

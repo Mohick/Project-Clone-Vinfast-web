@@ -1,0 +1,8 @@
+@media screen and (min-width: 600px) {
+  .footer__box__items--text {
+    flex-direction: row;
+  }
+  .footer__box__items__text--title {
+    font-size: var(--font-size-medium);
+  }
+}

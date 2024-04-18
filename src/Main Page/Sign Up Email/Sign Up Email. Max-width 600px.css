@@ -1,0 +1,199 @@
+#sign__up__email {
+  background: url("https://vinfastauto.com/themes/porto/img/homepage-v2/join-the-charge.webp");
+  /* padding: 2%; */
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  background-origin: center;
+  z-index: -10;
+}
+.sign__up__email--title {
+  font-size: var(--font-size-large);
+  font-weight:bold;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--color-in--image);
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+}
+.sign__up__email--description {
+    margin-top: 2rem;
+    font-size: var(--font-size-medium);
+    font-weight:bold;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--color-in--image);
+    display: block;
+    text-align: center;
+}
+
+.sign__up__email__box__sign_up--input {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem ;
+}
+.sign__up__email__box__sign_up__input--email {
+    flex: 1;
+}
+.sign__up__email__box__sign_up__input--email,
+.sign__up__email__box__sign_up__input--btn  {
+    padding: 1.5rem;
+    width: 100%;
+    border: 0;
+    outline: none;
+}
+.sign__up__email__box__sign_up__input--btn  {
+    flex: 1;
+    position: relative;
+    color: var(--color-in--image);
+    text-transform: uppercase;
+    z-index: 1;
+    background: transparent;
+    display: block;
+    text-align: center;
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    backface-visibility: hidden;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -webkit-backface-visibility: hidden;
+}
+.sign__up__email__box__sign_up__input--btn.sign__up__email__box__sign_up__input__btn--rotateY {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.sign__up__email__box__sign_up__input__btn--correct {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    top: 0;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    background:  #73FA7E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -2;
+    -webkit-backface-visibility: hidden;
+}
+.sign__up__email__box__sign_up__input__btn--correct svg {
+    width: 2rem;
+    height: 2rem;
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+}
+.sign__up__email__box__sign_up__input__btn--correct.sign__up__email__box__sign_up__input__btn__correct--rotateY {
+    transform: rotateY(1deg);
+    -webkit-transform: rotateY(1deg);
+    -moz-transform: rotateY(1deg);
+    -ms-transform: rotateY(1deg);
+    -o-transform: rotateY(1deg);
+}
+.sign__up__email__box__sign_up__input--btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: var(--bg--btn);
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+} 
+.sign__up__email__box__sign_up__input--btn:hover {
+    color: var(--color-url);
+
+}
+.sign__up__email__box__sign_up__input--btn::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+} 
+
+.sign__up__email__box__sign_up__input--btn:hover::after {
+    width: 0;
+}
+
+.sign__up__email__box__sign_up__input--btn:hover::before {
+    width: 100%;
+}
+
+.sign__up__email__box__sign_up--alert {
+    margin-top: 2rem;
+    color: #e64649;
+    font-size: var(--font-size-small);
+    position: relative;
+    opacity: 0;
+}
+.sign__up__email__box__sign_up--alert.sign__up__email__box__sign_up--alert--invalid{
+    color: #e64649;
+    opacity: 1;
+}
+.sign__up__email__box__sign_up--alert.sign__up__email__box__sign_up--alert--valid{
+    color: #73FA7E;
+    opacity: 1;
+}
+
+.sign__up__email__box__sign_up--alert::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sign__up__email__box__sub--title {
+    margin-top: 2rem;
+    color: var(--color-in--image);
+    font-size: var(--font-size-small);
+}
+.sign__up__email__box__sub__title--policy {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.sign__up__email__box__sub__title--policy:hover {
+    text-decoration: underline;
+}
