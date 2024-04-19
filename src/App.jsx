@@ -4,6 +4,7 @@ import RouterPage from "./Router/Rputer Page";
 import ModalMenuPage from "./Modal Menu/Modal Menu";
 import { useEffect } from "react";
 import Footer from "./Footer/Footer";
+import Support from "./Support/Support";
 function App() {
   useEffect(() =>{
     const cpnBoxHeaderHeight = document.getElementById('header').clientHeight
@@ -18,6 +19,7 @@ function App() {
         <RouterPage />
       </div>
       <ModalMenuPage />
+      <Support/>
       <Footer/>
     </>
   );
