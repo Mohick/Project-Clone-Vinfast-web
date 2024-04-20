@@ -10,11 +10,11 @@ function HeaderPage() {
     <div id="header">
       <div className="layout  header__container">
         <div className="header__box--mobi">
-          <Link to={"#"} className="header__mobi--logo">
+          <Link to={"/"} className="header__mobi--logo">
             <img src="./Logo/logo-mobile.svg" alt="" />
           </Link>
           <div className="header__mobi__box--menu--login">
-            <Link to="#login" className="header__mobi--login">
+            <Link to="/login" className="header__mobi--login">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
               </svg>
@@ -245,7 +245,7 @@ function HeaderPage() {
             </div>
           </div>
           <div className="header__pc__box--menu--login--test-driver">
-            <Link className="header__pc--login" to={"#tai khoan"}>
+            <Link className="header__pc--login" to={"/login"}>
               Tài Khoản
             </Link>
             <Link className="header__pc--test-driver" to={"#dang ky lai thu"}>

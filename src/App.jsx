@@ -19,7 +19,6 @@ function App() {
         <RouterPage />
       </div>
       <ModalMenuPage />
-      <Support/>
       <Footer/>
     </>
   );
